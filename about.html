@@ -8,7 +8,7 @@
             background-size: cover;
             color: white;
         }
-    
+
         body::before {
             content: "";
             position: absolute;
@@ -19,13 +19,58 @@
             background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
             z-index: -1; /* Keeps it behind content */
         }
-    
+
         .container, .footer, .navbar {
             position: relative;
             z-index: 1; /* Ensures content stays on top */
         }
+
+        /* Navbar Styling */
+        .navbar {
+            background: rgba(39, 77, 49, 0.80) !important; /* Dark semi-transparent background */
+        }
+
+        .navbar .nav-link, .navbar-brand {
+            color: white !important; /* White navbar text */
+        }
+
+        .navbar .nav-link:hover {
+            color: #f8d210 !important; /* Highlight effect */
+        }
+
+        /* Footer Styling */
+        .footer {
+            background: rgba(39, 77, 49, 0.80); /* Dark footer */
+            color: white;
+        }
+
+        /* Image Styling */
+        .img-fluid {
+            border: 2px solid white; /* Adds a border around the image for better visibility */
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Subtle glow effect */
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Hover Effects */
+        a, button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
     </style>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us - Our Books</title>
@@ -34,7 +79,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand" href="index.html">Our Books</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -78,14 +123,14 @@
                 <li>👩‍💻 Admin features to manage books and reservations</li>
             </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
             <img src="assets/library.jpg" class="img-fluid rounded" alt="Library">
         </div>
     </div>
 </div>
 
 <!-- Footer -->
-<footer class="footer text-center mt-5 p-3 bg-light">
+<footer class="footer text-center mt-5 p-3">
     <p>&copy; 2025 Our Books. All Rights Reserved.</p>
 </footer>
 
